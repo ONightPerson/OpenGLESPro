@@ -20,7 +20,7 @@ import kotlin.math.sqrt
  *
  **/
 
-class BumpedLightRenderer : LightingRenderer("lighting/bumpedlighting.vs", "lighting/bumpedlighting.fs") {
+class BumpedLightRenderer : LightingRenderer("lighting/vertex_bumpedlighting.glsl", "lighting/fragment_bumpedlighting.glsl") {
 
     private var normalTexture = 0
 

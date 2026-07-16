@@ -1,13 +1,6 @@
 package io.github.kenneycode.openglespro.samples.renderer.lighting
 
 import android.opengl.GLES30
-import android.opengl.GLSurfaceView
-import android.opengl.Matrix
-import io.github.kenneycode.openglespro.Util
-import java.nio.ByteBuffer
-import java.nio.ByteOrder
-import java.nio.FloatBuffer
-import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 
 /**
@@ -21,7 +14,7 @@ import javax.microedition.khronos.opengles.GL10
  *
  **/
 
-class SpotLightRenderer : LightingRenderer("lighting/spotlight.vs", "lighting/spotlightsoftedge.fs") {
+class SpotLightRenderer : LightingRenderer("lighting/vertex_spotlight.glsl", "lighting/fragment_spotlightsoftedge.glsl") {
     
     override fun onDrawFrame(gl: GL10?) {
         super.onDrawFrame(gl)

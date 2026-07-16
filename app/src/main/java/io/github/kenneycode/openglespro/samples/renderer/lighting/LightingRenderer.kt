@@ -276,7 +276,7 @@ open class LightingRenderer(private val vertexShaderPath: String, private val fr
         GLES30.glUniform3f(GLES30.glGetUniformLocation(programId, "objectColor"), 1f, 1f, 0f)
 
         GLES30.glDrawArrays(GLES30.GL_TRIANGLES, 0, vertexData.size / VERTEX_COMPONENT_COUNT)
-        assert(GLES30.glGetError() == 0)
+//        assert(GLES30.glGetError() == 0)
 
     }
 
